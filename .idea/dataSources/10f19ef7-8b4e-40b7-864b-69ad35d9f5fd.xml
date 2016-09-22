@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - mydb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="mydb">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="blog"/>
+    <schema id="3" name="codingdojo"/>
+    <schema id="4" name="flask_schema"/>
+    <schema id="5" name="information_schema"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="performance_schema"/>
+    <schema id="8" name="twitter"/>
+    <table id="9" parent="1" name="products"/>
+    <table id="10" parent="1" name="users"/>
+    <column id="11" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="12" parent="9" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="13" parent="9" name="description">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="14" parent="9" name="price">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="15" parent="9" name="created_at">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="16" parent="9" name="updated_at">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="17" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="18" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="19" parent="10" name="first_name">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="20" parent="10" name="last_name">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="21" parent="10" name="email">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="22" parent="10" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="23" parent="10" name="created_at">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="24" parent="10" name="updated_at">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="25" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
